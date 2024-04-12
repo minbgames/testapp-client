@@ -1,0 +1,31 @@
+name: 'Release'
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - uses: 'actions/checkout@v4'
+
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          service_account: 'my-service-account@minbtestapp.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/820322827301/locations/global/workloadIdentityPools/github/providers/next'
+
+      - id: 'deploy'
+        uses: 'google-github-actions/deploy-appengine@v2'
+        with:
+          project_id: "minbtestapp" # Ex: 1011234567890
+
+      # Example of using the output
+      - id: 'test'
+        run: 'curl "${{ steps.deploy.outputs.version_url }}"'

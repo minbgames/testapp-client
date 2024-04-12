@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668133ad-7cd6-4eac-b691-a4602a54e31e" name="Changes" comment="" />
+    <list default="true" id="668133ad-7cd6-4eac-b691-a4602a54e31e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Rebasing main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/minb/Desktop/_Personal/_PersonalProject/2401_NestjsStudy/testapp-proj/testapp-client",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -73,7 +77,7 @@
       <workItem from="1711504343511" duration="1169000" />
       <workItem from="1712108913663" duration="1393000" />
       <workItem from="1712553766802" duration="593000" />
-      <workItem from="1712799442522" duration="5193000" />
+      <workItem from="1712799442522" duration="10755000" />
     </task>
     <servers />
   </component>
